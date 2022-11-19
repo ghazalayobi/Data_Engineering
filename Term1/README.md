@@ -5,5 +5,10 @@ This report includes a comprehensive description of my project. I used the Maven
 
 ### Operational Layer ###
 
+The Maven Pizza Challenge dataset records pizza sales from 2015-01-01 to 2015-12-31 of a fictitious pizza place and contains the following four relational tables: 
+- The OrderDetails table includes 48620 rows containing order details regarding pizza type and order quantity. The Id of the order details is the primary key in this table.
+- The Orders table records the order date and time indicators of the 21350 orders where the Order_Id is the primary key.
+- The PizzaTypes table determines the name, category, and ingredient information about the 33 different pizza types offered by the pizza place. Pizza_type_id is the primary key here.
+- The Pizzas table contains 97 rows consisting of the pricing details of pizzas based on the size and pizza type. Pizza_id is the primary key here.
 
 
