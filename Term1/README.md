@@ -67,10 +67,14 @@ More information on the queries and results of the views can be #found here#.
 ### Extras:
 
 
+#### View: Busiest time of the day:
 
 
+By creating this view, I intend to find out what times of the day the pizza place is the busiest. This way, the pizza place can better work on efficiency and if possible try to increase productivity or personnel to serve customers in a timely manner during rush hours. The view displays the Times of the day (Morning, Afternoon, or Evening) and sorts it by the number of orders and quantity sold. Here, we find the Afternoon to be the busiest followed by Evening and then Morning with the least number of orders.
 
+#### Event Scheduler:
 
+I have then created an event scheduler for the above-mentioned view which call the view every hour in the coming 3 hours. More can be found here.
 
 
 
