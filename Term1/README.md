@@ -1,9 +1,9 @@
-# Data Engineering Project Report:  Maven Pizza Challenge Dataset #
+# Data Engineering Project Report:  Maven Pizza Challenge Dataset
 
 
 This report includes a comprehensive description of my project. I used the Maven Pizza Challenge Dataset from Kaggle to complete this task. The dataset contains the annual sales data of a fictitious pizza place officially collected for the Maven Pizza Challenge. It includes the date and time of each order and the pizzas served, with additional details on pizza size, type, quantity, price, and ingredients. The link to the dataset can be found [here](https://www.kaggle.com/datasets/neethimohan/maven-pizza-challenge-dataset)
 
-### Operational Layer ###
+### Operational Layer
 
 The Maven Pizza Challenge dataset records pizza sales from 2015-01-01 to 2015-12-31 of a fictitious pizza place and contains the following four relational tables: 
 - The OrderDetails table includes 48620 rows containing order details regarding pizza type and order quantity. The Id of the order details is the primary key in this table.
@@ -17,7 +17,7 @@ The following EER diagram better illustrates the relationship between the tables
 
 ![starSchema](https://github.com/ayobishahana/Data_Engineering/blob/main/Term1/Tables/EER_Diagram.png)
 
-### Analytics ###
+### Analytics
 
 In order to analyze the data to help the pizza place find opportunities to increase sales and work more efficiently, I would require the data to provide me with the following information:
 - what is the Total Revenue generated in January?
@@ -32,16 +32,39 @@ In order to carry out the analysis, my analytics plan is as follows:
 
 ![Analytics](https://github.com/ayobishahana/Data_Engineering/blob/main/Term1/Tables/Analytics.png)
 
-### Analytical Layer ###
+### Analytical Layer
 
 In the analytical layer, I created a data warehouse called dw_sales_analysis in order to provide one single table for both qualitative and quantitative parameters. Then, I used the table to create my views.  It consists of four dimensions; order details, orders, pizza types, and pizzas, and the queries can be #found here#. 
 
 ![AnalyticalLayer](https://github.com/ayobishahana/Data_Engineering/blob/main/Term1/Tables/Analytical_Layer.png)
 
 
+### Data Marts
 
+Using the data warehouse created in the analytical layer, I generated data marts using views that would enable me to respond to the questions posed in my analytical plan. The five views are as follows:
 
+#### View One: Total Revenue in 2015
 
+This view was created to find the total revenue produced by the pizza place over the year. It can help the pizza place predict its future performance and plan any alterations accordingly. It includes total number of orders, total revenue, and order year columns.
+
+#### View Two: Highest Revenue Month
+
+This view displays revenues generated at the end of each month in a descending order. Our aim is to find the month with highest revenue and provide the pizza place an idea of when to expect higher pizza demands. This will assist the pizza place to plan efficiently. The view includes all month with their subsequent total revenues in a descending order.
+
+#### View Three: Top 3 Pizza Sizes
+
+This View will assist the pizza place to find what their top three highly demanded pizza sizes are. It displays pizza sizes and sorts it on the basis of most numbers of pizzas sold. 
+
+#### View four: Average Price of a Large Pizza
+
+The previous view displayed that Large Pizza Size was sold the most. In this view, I am interested to show what the average price of a large pizza is since price is one of the crucial parameters of higher demand of this particular size.
+
+#### View Five: Top 5 Pizza Types and the Revenues Generated
+This view displays pizza types and sorts them in a descending order by quantity sold. It includes Pizza Type Id, Pizza Name, sum of quantity sold, and total revenue for each of those 5 best-selling pizzas.
+
+More information on the queries and results of the views can be #found here#.
+
+### Extras:
 
 
 
