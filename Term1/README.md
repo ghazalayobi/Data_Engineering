@@ -13,6 +13,15 @@ The Maven Pizza Challenge dataset records pizza sales from 2015-01-01 to 2015-12
 
 The dataset can be found [here](https://github.com/ayobishahana/Data_Engineering/tree/main/Term1/Dataset) 
 
+The following EER diagram better illustrates the relationship between the tables. The diagram shows the OrderDetails and Pizzas tables as the central tables which include substantial information that is vital for the analysis.  Further details about the operational layer can be #found [here]()#.
+
+![starSchema](https://github.com/ayobishahana/Data_Engineering/blob/main/Term1/Tables/EER_Diagram.png)
+
+
+
+
+
+
 
 
 
